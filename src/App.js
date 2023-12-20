@@ -15,23 +15,21 @@ import { Footer } from "./components/Footer";
 
 function App() {
   return (
-    <CartProvider>
-      <div className="App relative bg-black py-2">
-        <div className="relative rounded-3xl bg-white z-1">
-          <Navbar />
-          <Main />
-          <Bganimation />
-        </div>
-        <div className="absolute w-full z-0">
-          <Blackbar />
-          <Note />
-          <ProductsPage />
-          <Project />
-          <Footer />
-        </div>
+    <div className="App relative bg-black py-2">
+      <div className="relative rounded-3xl bg-white z-1">
+        <Navbar />
+        <Main />
+        <Bganimation />
+      </div>
+      <div className="absolute w-full z-0">
+        <Blackbar />
+        <Note />
+        <ProductsPage />
+        <Project />
+        <Footer />
       </div>
       <ToastContainer />
-    </CartProvider>
+    </div>
   );
 }
 

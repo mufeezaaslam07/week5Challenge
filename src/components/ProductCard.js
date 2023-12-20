@@ -1,10 +1,10 @@
 import React from "react";
 import { toast } from "react-toastify";
-import { useCart } from "./CartContext";
+import useCartStore from "../stores/CartStore";
 
 const ProductCard = ({ product }) => {
   const { id, title, price, description, category, images } = product;
-  const { addToCart } = useCart();
+  const addToCart = useCartStore((state) => state.addToCart);
 
   const handleAddToCart = () => {
     addToCart(product);
